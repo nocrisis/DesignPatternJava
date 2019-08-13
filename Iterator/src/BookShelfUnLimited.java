@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class BookShelfUnLimited implements Aggregate {
-    private ArrayList<Book> books;
+    private ArrayList books;
 
     public BookShelfUnLimited() {
         this.books = new ArrayList<Book>();
@@ -10,15 +10,16 @@ public class BookShelfUnLimited implements Aggregate {
     public int getLength() {
         return books.size();
     }
+
     public Book getBookAt(int i) {
-        return books.get(i);
+        return (Book) books.get(i);
     }
 
-    public void addBook(Book book,int i) {
+    public void addBook(Book book, int i) {
         if (i > getLength() + 1) {
             books.add(i + 1, book);
         } else {
-            books.add( i,book);
+            books.add(i, book);
         }
     }
 
