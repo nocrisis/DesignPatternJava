@@ -2,7 +2,7 @@ package concrete;
 
 import framework.Product;
 /*concrete prototype具体的原型
-* 负责实现 复制现有instanxe并生成新实例的方法*/
+* 负责实现 复制现有instance并生成新实例的方法*/
 public class MessageBox implements Product {
     private char decochar;
 

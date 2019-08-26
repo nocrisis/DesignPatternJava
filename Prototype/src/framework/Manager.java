@@ -2,7 +2,7 @@ package framework;
 
 import java.util.HashMap;
 /*client使用者
-* 负责使用 复制现有instanxe并生成新实例的方法*/
+* 负责使用 复制现有instance并生成新实例的方法*/
 public class Manager {
     private HashMap showCase = new HashMap();
 
